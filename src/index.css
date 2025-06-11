@@ -1,0 +1,167 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+}
+.formContainer input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #444;
+  color: #fff;
+}
+.formContainer button {
+  width: 94%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.formContainer button:hover {
+  background-color: #0056b3;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.buttonContainer button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+
+  color: #fff;
+  cursor: pointer;
+}
+
+.chooseBtn {
+  background-color: #28a745;
+}
+.chooseBtn:hover {
+  background-color: #218838;
+}
+.clearBtn {
+  background-color: #dc3545;
+}
+.clearBtn:hover {
+  background-color: #c82333;
+}
+
+.selectedOptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #444;
+}
+
+.selectedOptionContainer h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.optionsContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 600px;
+  background-color: #444;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.optionsContainer li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+.optionsContainer li:last-child {
+  border-bottom: none;
+}
+.optionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.optionItem button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.optionItem button:hover {
+  background-color: #0056b3;
+}
+.optionItem .deleteBtn {
+  background-color: #dc3545;
+}
+.optionItem .deleteBtn:hover {
+  background-color: #c82333;
+}
+.optionItem .editBtn {
+  background-color: #ffc107;
+}
+.optionItem .editBtn:hover {
+  background-color: #e0a800;
+}
