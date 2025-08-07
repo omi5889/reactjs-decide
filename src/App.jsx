@@ -77,7 +77,7 @@ function App() {
             <ul>
               {options.map((option, index) => (
                 <li key={index} className="optionItem">
-                  {option}
+                  <div className="optionText">{option}</div>
                   <div className="actionsContainer">
                     <button onClick={() => handleEditOption(index)}>
                       <i class="fa-solid fa-pen"></i>

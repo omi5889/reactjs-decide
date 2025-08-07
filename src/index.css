@@ -40,6 +40,8 @@
   border-radius: 4px;
   background-color: #444;
   color: #fff;
+  height: 40px;
+  font-size: large;
 }
 .formContainer button {
   width: 94%;
@@ -50,6 +52,8 @@
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
+  height: 40px;
+  font-size: large;
 }
 .formContainer button:hover {
   background-color: #0056b3;
@@ -69,9 +73,10 @@
   padding: 10px;
   border: none;
   border-radius: 4px;
-
+  height: 40px;
   color: #fff;
   cursor: pointer;
+  font-size: large;
 }
 
 .chooseBtn {
@@ -140,6 +145,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 10%;
+}
+.optionText {
+  flex-grow: 1;
+  color: #fff;
+  font-size: large;
+  padding-left: 5px;
 }
 .optionItem button {
   background-color: transparent;
@@ -164,4 +176,33 @@
 }
 .optionItem .editBtn:hover {
   background-color: #e0a800;
+}
+.actionsContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .formContainer,
+  .buttonContainer,
+  .selectedOptionContainer,
+  .optionsContainer,
+  .actionsContainer {
+    width: 95%;
+  }
+  .formContainer input,
+  .formContainer button,
+  .buttonContainer button {
+    width: 100%;
+  }
+  .buttonContainer {
+    flex-direction: column;
+  }
+  .buttonContainer button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
